@@ -1,25 +1,53 @@
-        * {
-    margin: 0;
-    padding: 0;
-    }
-    
-    .position__header {
-      background-color: red;
-      position: fixed;
-      /* relative 만 주면 변화가 없다
-      top, bottom, right, left 속성을 이용하여 현재 위치를 기준으로 움직일 수 있다
-      top을 사용하면 현재 요소의 top을 기준으로 움직인다 */
-      z-index: 10;
-      display: inline-block;;
-      width: 100%;
-      height: 20px;
-    }
+* {
+  margin: 0;
+  padding: 0;
+}
 
-    .position__nav {
-      background-color: rgb(61, 225, 39);
-      position: fixed;
-      /* relative 만 주면 변화가 없다
-      top, bottom, right, left 속성을 이용하여 현재 위치를 기준으로 움직일 수 있다
-      top을 사용하면 현재 요소의 top을 기준으로 움직인다 */
-      display: flex;
-    }
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header_top {
+  background-color: white;
+  position: relative;
+  height: 55px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 1px 1px 2px rgb(87, 86, 86);
+}
+
+.header_left {
+  background-color: aqua;
+  display: inline-block;
+  justify-content: space-evenly;
+  position: fixed;
+  height: auto;
+  height: 100%;
+  line-height: 3;
+  text-align: center;
+}
+
+.main-container {
+  justify-content: space-between;
+}
+
+main {
+  background-color: yellow;
+  max-height: 100%;
+  justify-content: space-between;
+  text-align: center;
+  height: 100%;
+  overflow: auto;
+}
+
+.footer-container {
+  background-color: brown;
+  justify-content: space-between;
+  text-align: center;
+  height: 100%;
+  overflow: auto;
+  position: static;
+}
