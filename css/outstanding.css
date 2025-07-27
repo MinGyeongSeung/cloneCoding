@@ -1,4 +1,5 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
 * {
   padding: 0px;
   margin: 0px;
@@ -11,11 +12,13 @@
 }
 
 body {
-  overflow-x: hidden; /* 넘치는 내용은 잘리고 스크롤바는 표시되지 않습니다. */
+  overflow-x: hidden;
+  /* 넘치는 내용은 잘리고 스크롤바는 표시되지 않습니다. */
 }
 
 .header_top {
   position: fixed;
+  background-color: white;
   top: 0;
   left: 0;
   height: 55px;
@@ -40,14 +43,105 @@ body {
   height: auto;
   height: 100%;
   width: 255px;
-  top: 56px;
-  line-height: 3;
+  top: 95px;
+  line-height: 2;
   text-align: center;
 }
 
+.nav-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.nav-item {
+  margin-bottom: 10px;
+}
+
+/* 기본적으로 숨김 */
+.menu_subitem {
+  max-height: 0;
+  overflow: hidden;
+  transition: ease;
+}
+
+/* 체크되면 열기 */
+#toggle-posting:checked~.menu_subitem {
+  max-height: 1000px;
+  /* 충분히 큰 높이로 열림 */
+}
+
+/* 포스팅 항목 디자인 유지 */
+.menu_has_subitem {
+  display: block;
+  font-weight: bold;
+  color: #222;
+  padding: 6px 0;
+  cursor: pointer;
+}
+
+.menu_subitem a {
+  display: block;
+  font-size: 14px;
+  color: #555;
+  text-decoration: none;
+  padding: 3px 0;
+}
+
+.menu_subitem a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+.nav-item>a {
+  display: block;
+  font-weight: bold;
+  color: #222;
+  text-decoration: none;
+  padding: 6px 0;
+  cursor: pointer;
+}
+
 .main-container {
-  margin-left: 255px; /* 좌측 고정 */
-  margin-top: 56px; /* 상단 고정 */
+  margin-left: 255px;
+  /* 좌측 고정 */
+  margin-top: 56px;
+  /* 상단 고정 */
+  width: 100%;
+  max-width: 1500px;
+}
+
+.news-inline-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 24px auto;
+  padding: 6px 10px;
+  background-color: white;
+  border-radius: 8px;
+  font-size: 14px;
+  width: 100%;
+  max-width: 1500px;
+  box-shadow: 1px 1px 2px rgb(87, 86, 86);
+}
+
+.news-badge {
+  background-color: #1f8ce6;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px 12px;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.news-title {
+  font-size: 1.05em;
+  font-weight: bold;
+  color: #222;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 70px;
+  line-height: auto;
 }
 
 main {
@@ -55,11 +149,67 @@ main {
   height: 100%;
 }
 
+/* 섹션 전체 */
+.main-container02 {
+  margin: 60px auto;
+  padding: 0 20px;
+  max-width: 1200px;
+}
+
+/* 섹션 제목 */
+.section02--title {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+/* 기사 카드 전체 감싸는 컨테이너 */
+.article-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: space-between;  /* 카드 사이 여백 */
+}
+
+/* 뉴스 카드 */
+.news-card {
+  flex: 1 1 30%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+/* 이미지 */
+.news-card img {
+  width: 450px;
+  min-height: 236px;
+  object-fit: cover;
+  display: block;
+}
+
+/* 제목 */
+.news-title {
+  font-size: 1.1em;
+  font-weight: bold;
+  padding: 12px 16px 0;
+  color: #222;
+  display: -webkit-box;
+  line-clamp: 2; /* 글 최대 몇줄까지*/
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 3em;
+  line-height: 1.5em;
+}
+
 .footer-container {
-  background-color: brown;
-  justify-content: space-between;
   text-align: center;
   height: 100%;
+  width: 100%;
+  margin-bottom: 10%;
   overflow: auto;
   position: static;
 }
