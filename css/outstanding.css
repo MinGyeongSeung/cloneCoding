@@ -101,6 +101,7 @@ body {
   padding: 0;
 }
 
+
 /* 포스팅 하위메뉴 */
 .nav-item {
   margin-bottom: 10px;
@@ -136,6 +137,12 @@ body {
   cursor: pointer;
 }
 
+.nav-menu > ul {
+  text-align:left;
+  margin-left: 50px;
+  margin: 60px;
+}
+
 .menu_subitem a {
   display: block;
   font-size: 14px;
@@ -156,6 +163,23 @@ body {
   text-decoration: none;
   padding: 6px 0;
   cursor: pointer;
+}
+
+.nav-item a {
+  display: inline-block;
+  width: 100%;
+  font-size: 17px;
+  font-weight: 600;
+  color: rgba(0, 0, 10, 0.750);
+  transition-property: all;
+  transition-duration: 300ms;
+  transition-delay: 0s;
+  transition-timing-function: ease;
+}
+
+.nav-item a:hover {
+  text-decoration: underline;
+  transform: translate(6px, 0px);
 }
 
 .main-container {
@@ -194,6 +218,7 @@ body {
   margin: 0;
   height: 15px;
 }
+
 
 /* 뉴스타이틀 */
 .news-title-top {

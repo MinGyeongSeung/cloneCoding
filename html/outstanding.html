@@ -1,238 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>outstanding 클론코딩</title>
-    <link rel="stylesheet" href="/css/outstanding.css" />
-  </head>
 
-  <body>
-    <header class="header_top">
-      <div class="header-logo">
-        <img
-          src="/img/outstanding_logo.jpg"
-          alt="로고"
-          height="30px"
-          width="150px"
-        />
-        <div class="header-search">
-          <input type="text" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>outstanding 클론코딩</title>
+  <link rel="stylesheet" href="/css/outstanding.css" />
+</head>
+
+<body>
+  <header class="header_top">
+    <div class="header-logo">
+      <img src="/img/outstanding_logo.jpg" alt="로고" height="30px" width="150px" />
+      <div class="header-search">
+        <input type="text" />
+      </div>
+      <div class="header_top_notice">
+        <img src="/img/speaker.png" alt="확성기" />
+        <a href="">
+          아웃스탠딩과 삼프로TV가 함께 '앙트러프러너십 칼리지'를 엽니다</a>
+      </div>
+    </div>
+    <div class="header_top_right">
+      <a href="" class="login">로그인</a>
+      <a href="" clsss="account">회원가입</a>
+    </div>
+    <div class="header_left">
+      <nav class="nav-menu">
+        <ul>
+          <li class="nav-item">
+            <!-- checkbox와 label을 이용해 클릭 토글 -->
+            <input type="checkbox" id="toggle-posting" hidden />
+            <label class="menu_has_subitem" for="toggle-posting">포스팅
+              <img src="/img/postiong_arrow.PNG" alt="포스팅 화살표" />
+            </label>
+
+            <div class="menu_subitem">
+              <a href="#">IT 스타트업 인터뷰</a>
+              <a href="#">IT 스타트업 이슈</a>
+              <a href="#">스타트업 데이터 분석</a>
+              <a href="#">해외 IT 스타트업</a>
+              <a href="#">투자 벤처캐피탈</a>
+              <a href="#">비즈니스모델 경영</a>
+              <a href="#">조직문화 리더십</a>
+              <a href="#">제품 서비스 리뷰</a>
+              <a href="#">핀테크 금융</a>
+              <a href="#">마케팅 PR</a>
+              <a href="#">커머스 물류</a>
+              <a href="#">엔터테인먼트 트렌드</a>
+              <a href="#">블록체인 메타버스</a>
+              <a href="#">바이오 헬스</a>
+              <a href="#">B2B 클라우드</a>
+              <a href="#">OTT 게임 웹툰</a>
+              <a href="#">자동차 모빌리티</a>
+              <a href="#">인공지능</a>
+              <a href="#">스타트업 리포트</a>
+              <a href="#">주주총회</a>
+              <a href="#">스폰서십</a>
+              <a href="#">공개포스팅</a>
+              <a href="#">알림</a>
+              <a href="#">자가테스트</a>
+            </div>
+          </li>
+          <li class="nav-item"><a href="#">인기 포스팅</a></li>
+          <li class="nav-item"><a href="#">스타트업DB</a></li>
+          <li class="nav-item"><a href="#">IT스타트업 뉴스</a></li>
+          <li class="nav-item"><a href="#">광고 안내</a></li>
+          <li class="nav-item"><a href="#">멤버십 결제</a></li>
+          <li class="nav-item"><a href="#">급룹구독</a></li>
+          <li class="nav-item"><a href="#">골든벨</a></li>
+          <li class="nav-item"><a href="#">로그인</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-container">
+    <img src="/img/Advertising _banner.png" />
+    <section class="section01">
+      <div>
+        <img src="/img/Main_picture01.png" width="430" min-height="236" />
+        <img src="/img/Main_picture02.png" width="450" min-height="300" />
+        <img src="/img/Main_picture03.png" width="430" min-height="236" />
+      </div>
+    </section>
+
+    <div class="news-inline-box">
+      <span class="news-badge">뉴스</span>
+      <a class="news-title-top">토스, ‘모바일 신분증’ 서비스 개시</a>
+    </div>
+
+    <section class="section-container02">
+      <div class="section02">
+        <div class="article-container">
+          <article class="news-card">
+            <img src="/img/Rq1-1.jpg" alt="뉴스 이미지 1" />
+            <h3 class="news-title">
+              막 오른 천하제일 AI대회, 키워드는 오픈소스-프롬스크래치
+            </h3>
+          </article>
+          <article class="news-card">
+            <img src="/img/Rq1-2.jpg" alt="뉴스 이미지 2" />
+            <h3 class="news-title">
+              진출로는 없는 상황".. 김학균VS협회장 인터뷰"
+            </h3>
+          </article>
+          <article class="news-card">
+            <img src="/img/Rq1-3.jpg" alt="뉴스 이미지 3" />
+            <h3 class="news-title">
+              '징역 4년' 유정범 대표에 투자한 VC, 어떻게 봐야 할까
+            </h3>
+          </article>
+          <article class="news-card">
+            <img src="/img/Rq1-4.jpg" alt="뉴스 이미지 4" />
+            <h3 class="news-title">동기부여는 짧다</h3>
+          </article>
         </div>
-        <div class="header_top_notice">
-          <img src="/img/speaker.png" alt="확성기" />
-          <a href="">
-            아웃스탠딩과 삼프로TV가 함께 '앙트러프러너십 칼리지'를 엽니다</a
-          >
+
+        <div class="article-container">
+          <article class="news-card">
+            <img src="/img/Rq1-5.jpg" alt="뉴스 이미지 5" />
+            <h3 class="news-title">
+              아하앤컴퍼니는 어떻게 100억을 벌고 있을까?
+            </h3>
+          </article>
+          <article class="news-card">
+            <img src="/img/Rq1-6.jpg" alt="뉴스 이미지 6" />
+            <h3 class="news-title">
+              세금계산서 발행하면 뭐합니까? 수금 못하면 꽝입니다
+            </h3>
+          </article>
+          <article class="news-card">
+            <img src="/img/Rq1-7.jpg" alt="뉴스 이미지 7" />
+            <h3 class="news-title">
+              투자자들이 매력적으로 느끼는 IR자료의 핵심요소
+            </h3>
+          </article>
+          <article class="news-card">
+            <img src="/img/Rq1-8.jpg" alt="뉴스 이미지 8" />
+            <h3 class="news-title">
+              아웃스탠딩과 삼프로TV가 함께 '앙트러프러너십 칼리지를 엽니다'
+            </h3>
+          </article>
+        </div>
+
+        <div class="article-container">
+          <article class="news-card">
+            <img src="/img/Rq1-9.jpg" alt="뉴스 이미지 9" />
+            <h3 class="news-title">
+              '스타트업700곳실적모아보기' 전자책이 나왔습니다
+            </h3>
+          </article>
+          <article class="news-card">
+            <img src="/img/Rq1-10.jpg" alt="뉴스 이미지 10" />
+            <h3 class="news-title">
+              2025년 상반기에 MAU가 확 감소한 서비스 TOP 20
+            </h3>
+          </article>
+          <article class="news-card">
+            <img src="/img/Rq1-11.jpg" alt="뉴스 이미지 11" />
+            <h3 class="news-title">
+              네이버 가격비교 시대가 저물어갑니다
+            </h3>
+          </article>
+          <article class="news-card">
+            <img src="/img/Rq1-12.jpg" alt="뉴스 이미지 12" />
+            <h3 class="news-title">
+              AI 시대, 껍데기는 가고 진짜 실력만 남는다
+            </h3>
+          </article>
+        </div>
+
+        <div class="article-container">
+          <article class="news-card">
+            <img src="/img/Rq1-13.jpg" alt="뉴스 이미지 13" />
+            <h3 class="news-title">
+              네이버·놀유니버스 대표 출신 최휘영이 문체부 장관에 지명된 이유를
+              살펴봤습니다
+            </h3>
+          </article>
+          <article class="news-card">
+            <img src="/img/Rq1-14.jpg" alt="뉴스 이미지 14" />
+            <h3 class="news-title">
+              기업회생 신청한 왓챠..창업자와 투자사의 입장을 들어봤습니다
+            </h3>
+          </article>
+          <article class="news-card">
+            <img src="/img/Rq1-15.jpg" alt="뉴스 이미지 15" />
+            <h3 class="news-title">
+              방시혁 사태가 스타트업 생태계에 의미하는 것
+            </h3>
+          </article>
+          <article class="news-card">
+            <img src="/img/Rq1-16.jpg" alt="뉴스 이미지 16" />
+            <h3 class="news-title">
+              2025년 상반기에 MAU가 확 튄 서비스 TOP 25
+            </h3>
+          </article>
         </div>
       </div>
-      <div class="header_top_right">
-        <a href="" class="login">로그인</a>
-        <a href="" clsss="account">회원가입</a>
+    </section>
+
+    <footer class="footer-container">
+      <div class="footer-content">
+        <p>주식회사 아웃스탠딩 컴퍼니<br /></p>
+        <p>주소 : 서울 영등포구 여의대로 108 파크원 (타워1) 28F<< /p>
+            <p>사업자등록번호 : 836-81-00086</p>
+            <p>인터넷신문등록번호 : 서울 아03778</p>
+            <p>
+              등록일 : 2015년 6월 1일 | 제호 : 아웃스탠딩 | 대표/발행인 : 김동환,
+              류호성
+            </p>
+            <p>편집인 : 류호성 | 발행일자 : 2015년 1월 17일</p>
+
+            <p><strong>About Us</strong></p>
+            <p><a href="#">기자소개</a> | <a href="#">콘텐츠 인용 안내</a></p>
+            <p>
+              결제 및 서비스 문의 : <a href="#">이메일</a> or
+              <a href="#">문의하기</a>
+            </p>
+            <p>보도 자료 전송 : press@outstanding.kr</p>
+            <p>기사 문의 : <a href="#">이메일</a> or 1600-2895</p>
+            <p>
+              <a href="#">서비스 이용약관</a> |
+              <a href="#">개인정보 보호정책</a> |
+              <a href="#">청소년 보호정책</a> (책임자: 박주현)
+            </p>
       </div>
-      <div class="header_left">
-        <nav class="nav-menu">
-          <ul>
-            <li class="nav-item">
-              <!-- checkbox와 label을 이용해 클릭 토글 -->
-              <input type="checkbox" id="toggle-posting" hidden />
-              <label class="menu_has_subitem" for="toggle-posting"
-                >포스팅</label
-              >
-
-              <div class="menu_subitem">
-                <a href="#">IT 스타트업 인터뷰</a>
-                <a href="#">IT 스타트업 이슈</a>
-                <a href="#">스타트업 데이터 분석</a>
-                <a href="#">해외 IT 스타트업</a>
-                <a href="#">투자 벤처캐피탈</a>
-                <a href="#">비즈니스모델 경영</a>
-                <a href="#">조직문화 리더십</a>
-                <a href="#">제품 서비스 리뷰</a>
-                <a href="#">핀테크 금융</a>
-                <a href="#">마케팅 PR</a>
-                <a href="#">커머스 물류</a>
-                <a href="#">엔터테인먼트 트렌드</a>
-                <a href="#">블록체인 메타버스</a>
-                <a href="#">바이오 헬스</a>
-                <a href="#">B2B 클라우드</a>
-                <a href="#">OTT 게임 웹툰</a>
-                <a href="#">자동차 모빌리티</a>
-                <a href="#">인공지능</a>
-                <a href="#">스타트업 리포트</a>
-                <a href="#">주주총회</a>
-                <a href="#">스폰서십</a>
-                <a href="#">공개포스팅</a>
-                <a href="#">알림</a>
-                <a href="#">자가테스트</a>
-              </div>
-            </li>
-            <li class="nav-item"><a href="#">인기 포스팅</a></li>
-            <li class="nav-item"><a href="#">스타트업DB</a></li>
-            <li class="nav-item"><a href="#">IT스타트업 뉴스</a></li>
-            <li class="nav-item"><a href="#">광고 안내</a></li>
-            <li class="nav-item"><a href="#">멤버십 결제</a></li>
-            <li class="nav-item"><a href="#">급룹구독</a></li>
-            <li class="nav-item"><a href="#">골든벨</a></li>
-            <li class="nav-item"><a href="#">로그인</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-
-    <main class="main-container">
-      <img src="/img/Advertising _banner.png" />
-      <section class="section01">
-        <div>
-          <img src="/img/Main_picture01.png" width="430" min-height="236" />
-          <img src="/img/Main_picture02.png" width="450" min-height="270" />
-          <img src="/img/Main_picture03.png" width="430" min-height="236" />
-        </div>
-      </section>
-
-      <div class="news-inline-box">
-        <span class="news-badge">뉴스</span>
-        <a class="news-title-top">토스, ‘모바일 신분증’ 서비스 개시</a>
-      </div>
-
-      <section class="section-container02">
-        <div class="section02">
-          <div class="article-container">
-            <article class="news-card">
-              <img src="/img/Rq1-1.jpg" alt="뉴스 이미지 1" />
-              <h3 class="news-title">
-                막 오른 천하제일 AI대회, 키워드는 오픈소스-프롬스크래치
-              </h3>
-            </article>
-            <article class="news-card">
-              <img src="/img/Rq1-2.jpg" alt="뉴스 이미지 2" />
-              <h3 class="news-title">
-                진출로는 없는 상황".. 김학균VS협회장 인터뷰"
-              </h3>
-            </article>
-            <article class="news-card">
-              <img src="/img/Rq1-3.jpg" alt="뉴스 이미지 3" />
-              <h3 class="news-title">
-                '징역 4년' 유정범 대표에 투자한 VC, 어떻게 봐야 할까
-              </h3>
-            </article>
-            <article class="news-card">
-              <img src="/img/Rq1-4.jpg" alt="뉴스 이미지 4" />
-              <h3 class="news-title">동기부여는 짧다</h3>
-            </article>
-          </div>
-
-          <div class="article-container">
-            <article class="news-card">
-              <img src="/img/Rq1-5.jpg" alt="뉴스 이미지 5" />
-              <h3 class="news-title">
-                아하앤컴퍼니는 어떻게 100억을 벌고 있을까?
-              </h3>
-            </article>
-            <article class="news-card">
-              <img src="/img/Rq1-6.jpg" alt="뉴스 이미지 6" />
-              <h3 class="news-title">
-                세금계산서 발행하면 뭐합니까? 수금 못하면 꽝입니다
-              </h3>
-            </article>
-            <article class="news-card">
-              <img src="/img/Rq1-7.jpg" alt="뉴스 이미지 7" />
-              <h3 class="news-title">
-                투자자들이 매력적으로 느끼는 IR자료의 핵심요소
-              </h3>
-            </article>
-            <article class="news-card">
-              <img src="/img/Rq1-8.jpg" alt="뉴스 이미지 8" />
-              <h3 class="news-title">
-                아웃스탠딩과 삼프로TV가 함께 '앙트러프러너십 칼리지를 엽니다'
-              </h3>
-            </article>
-          </div>
-
-          <div class="article-container">
-            <article class="news-card">
-              <img src="/img/Rq1-9.jpg" alt="뉴스 이미지 9" />
-              <h3 class="news-title">
-                '스타트업700곳실적모아보기' 전자책이 나왔습니다
-              </h3>
-            </article>
-            <article class="news-card">
-              <img src="/img/Rq1-10.jpg" alt="뉴스 이미지 10" />
-              <h3 class="news-title">
-                2025년 상반기에 MAU가 확 감소한 서비스 TOP 20
-              </h3>
-            </article>
-            <article class="news-card">
-              <img src="/img/Rq1-11.jpg" alt="뉴스 이미지 11" />
-              <h3 class="news-title">
-                네이버 가격비교 시대가 저물어갑니다
-              </h3>
-            </article>
-            <article class="news-card">
-              <img src="/img/Rq1-12.jpg" alt="뉴스 이미지 12" />
-              <h3 class="news-title">
-                AI 시대, 껍데기는 가고 진짜 실력만 남는다
-              </h3>
-            </article>
-          </div>
-
-          <div class="article-container">
-            <article class="news-card">
-              <img src="/img/Rq1-13.jpg" alt="뉴스 이미지 13" />
-              <h3 class="news-title">
-                네이버·놀유니버스 대표 출신 최휘영이 문체부 장관에 지명된 이유를
-                살펴봤습니다
-              </h3>
-            </article>
-            <article class="news-card">
-              <img src="/img/Rq1-14.jpg" alt="뉴스 이미지 14" />
-              <h3 class="news-title">
-                기업회생 신청한 왓챠..창업자와 투자사의 입장을 들어봤습니다
-              </h3>
-            </article>
-            <article class="news-card">
-              <img src="/img/Rq1-15.jpg" alt="뉴스 이미지 15" />
-              <h3 class="news-title">
-                방시혁 사태가 스타트업 생태계에 의미하는 것
-              </h3>
-            </article>
-            <article class="news-card">
-              <img src="/img/Rq1-16.jpg" alt="뉴스 이미지 16" />
-              <h3 class="news-title">
-                2025년 상반기에 MAU가 확 튄 서비스 TOP 25
-              </h3>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <footer class="footer-container">
-        <div class="footer-content">
-          <p>주식회사 아웃스탠딩 컴퍼니<br /></p>
-          <p>주소 : 서울 영등포구 여의대로 108 파크원 (타워1) 28F<</p>
-          <p>사업자등록번호 : 836-81-00086</p>
-          <p>인터넷신문등록번호 : 서울 아03778</p>
-          <p>
-            등록일 : 2015년 6월 1일 | 제호 : 아웃스탠딩 | 대표/발행인 : 김동환,
-            류호성
-          </p>
-          <p>편집인 : 류호성 | 발행일자 : 2015년 1월 17일</p>
-
-          <p><strong>About Us</strong></p>
-          <p><a href="#">기자소개</a> | <a href="#">콘텐츠 인용 안내</a></p>
-          <p>
-            결제 및 서비스 문의 : <a href="#">이메일</a> or
-            <a href="#">문의하기</a>
-          </p>
-          <p>보도 자료 전송 : press@outstanding.kr</p>
-          <p>기사 문의 : <a href="#">이메일</a> or 1600-2895</p>
-          <p>
-            <a href="#">서비스 이용약관</a> |
-            <a href="#">개인정보 보호정책</a> |
-            <a href="#">청소년 보호정책</a> (책임자: 박주현)
-          </p>
-        </div>
-      </footer>
-    </main>
-  </body>
+    </footer>
+  </main>
+</body>
 </html>
